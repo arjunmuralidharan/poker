@@ -53,7 +53,7 @@ const getCardValue = (player: Player, game: Game) => {
       }
       return getCardDisplayValue(game.gameType, player.value);
     }
-    return 'Thinking...';
+    return '🤔';
   }
 };
 

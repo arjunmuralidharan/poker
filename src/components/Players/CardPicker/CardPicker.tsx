@@ -30,7 +30,7 @@ export const CardPicker: React.FC<CardPickerProps> = ({ game, players, currentPl
     
       <div>
         <div className='CardPickerContainer'>
-          <Grid container spacing={4} justify='center'>
+          <Grid container spacing={4} justifyContent='center'>
             {cards.map((card: CardConfig, index) => (
               <Grid key={card.value} item xs>
                 

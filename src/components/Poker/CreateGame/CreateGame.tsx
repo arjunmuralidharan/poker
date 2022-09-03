@@ -17,7 +17,7 @@ import './CreateGame.css';
 
 export const CreateGame = () => {
   const history = useHistory();
-  const [gameName, setGameName] = useState('Planning Session');
+  const [gameName, setGameName] = useState('Avengers');
   const [createdBy, setCreatedBy] = useState('Guest');
   const [gameType, setGameType] = useState(GameType.Fibonacci);
 

@@ -15,7 +15,7 @@ describe('Footer component', () => {
   beforeAll(() => {
     // delete window.location;
     // @ts-ignore
-    window.location = { href?: '' };
+    window.location = { href: 'http://localhost:3000/' };
   });
 
   afterAll((): void => {
@@ -23,17 +23,9 @@ describe('Footer component', () => {
   });
   it('should render copyright', () => {
     render(<Footer />);
-    const element = screen.getByText('hellomuthu23');
+    const element = screen.getByText('Arjun Muralidharan');
     expect(element).toBeInTheDocument();
   });
-  it('should render feedback', () => {
-    render(<Footer />);
-    const element = screen.getByText('Feedback: hellomuthu23@gmail.com');
-    expect(element).toBeInTheDocument();
-  });
-  it('should show link to submit issue', () => {
-    render(<Footer />);
-    const element = screen.getByText('Submit an Issue');
-    expect(element).toBeInTheDocument();
-  });
+
+
 });
